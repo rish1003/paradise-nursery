@@ -27,7 +27,7 @@ const CartPage = ({ cart, setCart }) => {
           <div className="cart-items">
             {cart.map((item) => (
               <div key={item.id} className="cart-item-card">
-                <img src={item.image} alt={item.name} className="cart-item-image" />
+                <img src={`${process.env.PUBLIC_URL}${item.image}`} alt={item.name} className="cart-item-image" />
                 <div className="cart-item-details">
                   <h3>{item.name}</h3>
                   <p>₹{item.price.toFixed(2)} x {item.quantity}</p>
