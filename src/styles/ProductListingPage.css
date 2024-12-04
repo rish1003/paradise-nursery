@@ -62,4 +62,13 @@
   .add-to-cart button:hover {
     background-color: #45a049;
   }
+  /* ProductListingPage.css */
+
+/* Style for the disabled button */
+button:disabled {
+    background-color: #d3d3d3;  /* Grey background */
+    color: #a9a9a9;  /* Grey text */
+    border: 1px solid #d3d3d3;  /* Grey border */
+    cursor: not-allowed;  /* Prevent cursor change */
+  }
   
