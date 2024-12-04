@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import "../styles/ProductListingPage.css";
 
@@ -12,21 +12,31 @@ const plants = [
 ];
 
 const ProductListingPage = ({ cart, setCart }) => {
+
+  const [disabledItems, setDisabledItems] = useState(() => {
+    const savedDisabledItems = JSON.parse(localStorage.getItem("disabledItems"));
+    return savedDisabledItems || [];
+  });
+
   const categories = Array.from(new Set(plants.map((plant) => plant.category)));
 
   const addToCart = (plant, quantity) => {
     const existingItem = cart.find(item => item.id === plant.id);
     if (existingItem) {
-      // If the item already exists in the cart, just update its quantity
+
       setCart(cart.map(item =>
         item.id === plant.id
           ? { ...item, quantity: item.quantity + quantity }
           : item
       ));
     } else {
-      // Otherwise, add the new item to the cart
+
       setCart([...cart, { ...plant, quantity }]);
     }
+
+    const newDisabledItems = [...disabledItems, plant.id];
+    setDisabledItems(newDisabledItems);
+    localStorage.setItem("disabledItems", JSON.stringify(newDisabledItems)); 
   };
 
   return (
@@ -46,7 +56,7 @@ const ProductListingPage = ({ cart, setCart }) => {
                       className="plant-image"
                     />
                     <h3>{plant.name}</h3>
-                    <p>${plant.price.toFixed(2)}</p>
+                    <p>₹{plant.price.toFixed(2)}</p>
                     <div className="quantity-selector">
                       <label>Quantity: </label>
                       <input
@@ -64,6 +74,7 @@ const ProductListingPage = ({ cart, setCart }) => {
                           ) || 1;
                           addToCart(plant, quantity);
                         }}
+                        disabled={disabledItems.includes(plant.id)} 
                       >
                         Add to Cart
                       </button>

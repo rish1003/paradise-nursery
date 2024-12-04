@@ -30,7 +30,7 @@ const CartPage = ({ cart, setCart }) => {
                 <img src={item.image} alt={item.name} className="cart-item-image" />
                 <div className="cart-item-details">
                   <h3>{item.name}</h3>
-                  <p>${item.price.toFixed(2)} x {item.quantity}</p>
+                  <p>₹{item.price.toFixed(2)} x {item.quantity}</p>
                   <div className="cart-item-actions">
                     <button onClick={() => increaseQuantity(item.id)}>+</button>
                     <button onClick={() => decreaseQuantity(item.id)}>-</button>
@@ -44,7 +44,7 @@ const CartPage = ({ cart, setCart }) => {
       </div>
       <div className="cart-summary">
         <p>Total Items: {totalCount}</p>
-        <p>Total Price: ${totalAmount.toFixed(2)}</p>
+        <p>Total Price: ₹{totalAmount.toFixed(2)}</p>
         <div className="cart-buttons">
           <button className="continue-shopping"><Link to="/products">
           Continue Shopping
