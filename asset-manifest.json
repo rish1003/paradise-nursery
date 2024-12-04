@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/paradise-nursery/static/css/main.b79eb54f.css",
+    "main.js": "/paradise-nursery/static/js/main.babbefcb.js",
+    "static/js/453.81c3b423.chunk.js": "/paradise-nursery/static/js/453.81c3b423.chunk.js",
+    "static/media/image.png": "/paradise-nursery/static/media/image.c02fb007c12a7b901231.png",
+    "index.html": "/paradise-nursery/index.html",
+    "main.b79eb54f.css.map": "/paradise-nursery/static/css/main.b79eb54f.css.map",
+    "main.babbefcb.js.map": "/paradise-nursery/static/js/main.babbefcb.js.map",
+    "453.81c3b423.chunk.js.map": "/paradise-nursery/static/js/453.81c3b423.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b79eb54f.css",
+    "static/js/main.babbefcb.js"
+  ]
+}
