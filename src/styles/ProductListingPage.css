@@ -1,0 +1,65 @@
+/* ProductListingPage.css */
+
+  
+  .category-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .category-section {
+    margin-bottom: 30px;
+  }
+  
+  .category-title {
+    font-size: 2rem;
+    text-align: center; /* Center the category heading */
+    margin-bottom: 10px;
+  }
+  
+  .plant-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the product cards */
+  }
+  
+  .plant-card {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .plant-image {
+    height: 220px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .quantity-selector {
+    margin: 10px 0;
+  }
+  
+  .quantity-selector input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .add-to-cart button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart button:hover {
+    background-color: #45a049;
+  }
+  
