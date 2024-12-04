@@ -18,7 +18,7 @@ const Header = ({ cartItemCount }) => {
         </Link>
         <Link to="/cart" className="cart-link">
         <span className="cart-icon">
-  <img height="30px" src="assets//shopping.png" alt="Shopping Cart" />
+  <img height="30px"  src={`${process.env.PUBLIC_URL}/assets/shopping.png`}  alt="Shopping Cart" />
 </span>
 
           <span className="cart-count">{cartItemCount}</span>

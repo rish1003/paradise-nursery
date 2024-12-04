@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/LandingPage.css"; 
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   const handleGetStarted = () => {
@@ -15,9 +16,11 @@ const LandingPage = () => {
           vibrant houseplants. <br/> Discover a variety of plants to brighten your
           home and purify the air. Let us bring nature closer to you!
         </p>
-        <button className="get-started-btn" onClick={handleGetStarted}>
-          Get Started
-        </button>
+        
+        <Link to="/products" className="get-started-btn">
+          Get started
+        </Link>
+        
       </div>
     </div>
   );
