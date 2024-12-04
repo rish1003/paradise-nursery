@@ -3,7 +3,7 @@ import "../styles/LandingPage.css";
 
 const LandingPage = () => {
   const handleGetStarted = () => {
-    window.location.href = "paradise-nursery/#/products"; 
+    window.location.href = "/paradise-nursery/#/products"; 
   };
 
   return (
