@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/LandingPage.css"; // Link to the CSS file
+import "../styles/LandingPage.css"; 
 
 const LandingPage = () => {
   const handleGetStarted = () => {
-    window.location.href = "/products"; // Navigate to the product page
+    window.location.href = "/#/products"; 
   };
 
   return (

@@ -51,7 +51,8 @@ const ProductListingPage = ({ cart, setCart }) => {
                 .map((plant) => (
                   <div key={plant.id} className="plant-card">
                     <img
-                      src={plant.image}
+                      src={`${process.env.PUBLIC_URL}${plant.image}`}
+
                       alt={plant.name}
                       className="plant-image"
                     />
