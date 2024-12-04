@@ -3,12 +3,12 @@ import Header from "../components/Header";
 import "../styles/ProductListingPage.css";
 
 const plants = [
-  { id: 1, name: "Snake Plant", price: 20.99, category: "Air Purifying", image: "assets/snake_image.jpg" },
-  { id: 2, name: "Aloe Vera", price: 15.49, category: "Aromatic", image: "assets/aloe_image.jpeg" },
-  { id: 3, name: "Spider Plant", price: 18.99, category: "Air Purifying", image: "assets/spider_image.jpg" },
-  { id: 4, name: "Lavender", price: 12.99, category: "Aromatic", image: "assets/lavender_image.jpeg" },
-  { id: 5, name: "Peace Lily", price: 22.49, category: "Low Maintenance", image: "assets/peace_image.png" },
-  { id: 6, name: "Fiddle Leaf Fig", price: 30.99, category: "Low Maintenance", image: "assets/fiddle_image.jpeg" },
+  { id: 1, name: "Snake Plant", price: 20.99, category: "Air Purifying", image: "/assets/snake_image.jpg" },
+  { id: 2, name: "Aloe Vera", price: 15.49, category: "Aromatic", image: "/assets/aloe_image.jpeg" },
+  { id: 3, name: "Spider Plant", price: 18.99, category: "Air Purifying", image: "/assets/spider_image.jpg" },
+  { id: 4, name: "Lavender", price: 12.99, category: "Aromatic", image: "/assets/lavender_image.jpeg" },
+  { id: 5, name: "Peace Lily", price: 22.49, category: "Low Maintenance", image: "/assets/peace_image.png" },
+  { id: 6, name: "Fiddle Leaf Fig", price: 30.99, category: "Low Maintenance", image: "/assets/fiddle_image.jpeg" },
 ];
 
 const ProductListingPage = ({ cart, setCart }) => {
